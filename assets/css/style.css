@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    font-family: 'PT Serif', serif;
+    margin: 0 1em 0 0;
+}
+header h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+header div {
+    margin: 1 2em;
+    width: 50%;
+}
+header {
+    display:flex;
+    justify-content: space-evenly;
+    margin: 2em 0 3em 0;
+}
+
+img {
+    max-width: 250px;
+}
+
+main {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+.team {
+    margin: 0 2em;
+    position: relative;
+}
+
+#photo2, #photo5 {
+    margin: 3em 1em;
+}
+
+main h3 {
+    display: inline-block;
+    font-family: 'PT Serif';
+    text-transform: uppercase;
+    font-size: 14px;
+    transform:rotate(90deg);
+    position: absolute;
+    top:4em;
+    right:-6em;
+}
+
+main #photo2 > h3 {
+    right:-3em;
+    top:3em;
+}
+
+main #photo3 > h3 {
+    right:-4em;
+    top:2em;
+}
+
+main #photo4 > h3 {
+    right:-5em;
+    top:3em;
+}
+
+main #photo5 > h3 {
+    right:-2em;
+    top:2em;
+}
+
+main #photo6 > h3 {
+    right:-4em;
+    top:2em;
+}
+
+footer {
+    color:#A9A9A9;
+}
+
+footer a {
+    color:#A9A9A9;
+}
+
+@media screen and (max-width:950px) {
+    header {
+        margin: 3em;
+    }
+    main {
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    img {
+        max-width: 40vw;
+    }
+    #photo2, #photo4, #photo6 {
+        margin-top:4em;
+    }
+    #photo1, #photo3, #photo5 {
+        margin-top:-2em;
+    }
+}
